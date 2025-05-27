@@ -10,6 +10,8 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -93,7 +95,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -180,8 +182,97 @@ span {
 }
 
 .bg-sobre {
-  background-color: #2c3e50; /* Exemplo: azul escuro elegante */
+  background-color: #4c9def; /* Exemplo: azul escuro elegante */
   color: white;
+}
+
+/*Seção Contato*/
+.contato-section{
+    background: linear-gradient(135deg, #273b3b, #1a2c2b, #000303);
+    padding: 80px 0;
+    text-align: center;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+}
+.contato-section h2{
+    color: white;
+    margin-bottom: 20px;
+}
+.contato-section h3{
+    color: #0097b2;
+}
+
+.icontato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.icontato img{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+@media (max-width: 768px) {
+    .contato-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/*Seção destinos*/
+.destino-section{
+    background: white;
+    padding: 80px 0;
+    text-align: center;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+}
+.destino-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+.destino-container .box{
+    margin-top: 30px;
+    background-color: white;
+    color: #0097b2;
+    width: 300px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.destino-container .box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.destino-section h2{
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.destino-section img{
+    width: 40px;
+    height: 40px;
+}
+@media (max-width: 768px) {
+    .destino-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 abbr[title] {
